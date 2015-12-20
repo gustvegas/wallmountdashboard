@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EE0547-16B2-4B07-AD9F-1B7CFB9310D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0CE0E28-2C66-4ED0-B86C-784D701CD3F8}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dashboard", "src\dashboard\dashboard.xproj", "{DB64E941-B7C4-48DA-943C-05A7B6180B0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{05353DC5-3C98-439E-9523-4760D19D3371}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureVMPublishModule.psm1 = PublishScripts\AzureVMPublishModule.psm1
+		PublishScripts\Publish-WebApplicationVM.ps1 = PublishScripts\Publish-WebApplicationVM.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{CD6697B8-AB13-41B2-B0AF-9E974786501F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\dashboard-WAWS-dev.json = PublishScripts\Configurations\dashboard-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB64E941-B7C4-48DA-943C-05A7B6180B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB64E941-B7C4-48DA-943C-05A7B6180B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB64E941-B7C4-48DA-943C-05A7B6180B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB64E941-B7C4-48DA-943C-05A7B6180B0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DB64E941-B7C4-48DA-943C-05A7B6180B0D} = {02EE0547-16B2-4B07-AD9F-1B7CFB9310D2}
+		{CD6697B8-AB13-41B2-B0AF-9E974786501F} = {05353DC5-3C98-439E-9523-4760D19D3371}
+	EndGlobalSection
+EndGlobal
